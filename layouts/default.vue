@@ -1,8 +1,18 @@
 <template>
   <div>
+    <topbar/>
     <nuxt/>
   </div>
 </template>
+
+<script>
+  import TopBar from '@/components/TopBar'
+  export default {
+    components: {
+      topbar: TopBar
+    }
+  }
+</script>
 
 <style lang="scss">
 html {
