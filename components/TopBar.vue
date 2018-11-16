@@ -40,7 +40,8 @@
 
 @import "@/assets/scss/_bootstrap-variable-override.scss";
 
-.topbar { width: 100%; padding: 0 20px; height: 50px; position: relative; background: #fff; box-shadow: 0 1px 0 0 darken($body-bg, 2);
+.topbar { width: 100%; padding: 0 20px; height: 50px; position: relative; z-index: 2;
+  background: #fff; box-shadow: 0 1px 0 0 darken($body-bg, 2); 
     
   > * {height: 100%; display: flex; align-items: center;}
 
