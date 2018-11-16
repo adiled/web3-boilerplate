@@ -1,17 +1,26 @@
 <template>
   <div>
     <topbar/>
+    <menu :items="this.menuItems" />
     <nuxt/>
   </div>
 </template>
 
 <script>
-  import TopBar from '@/components/TopBar'
-  export default {
-    components: {
-      topbar: TopBar
+import TopBar from '@/components/TopBar'
+export default {
+  components: {
+    topbar: TopBar
+  },
+
+  data() {
+    return {
+      menuItems: [
+        {label: 'Wallet', to: '/wallet', }
+      ]
     }
   }
+}
 </script>
 
 <style lang="scss">
