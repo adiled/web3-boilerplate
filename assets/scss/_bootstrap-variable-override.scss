@@ -2,7 +2,13 @@
 
 
 $primary: #0677cc;
-$body-bg: #F4F7FF;
+$body-bg: #f8faff;
 
 $font-weight-light:           400 !default;
 $font-weight-normal:          500 !default;
+
+$btn-focus-box-shadow: none;
+$input-btn-focus-box-shadow: none;
+$input-focus-box-shadow: none;
+$custom-select-focus-box-shadow: none;
+$btn-active-box-shadow: none;

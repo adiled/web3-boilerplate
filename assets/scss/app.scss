@@ -6,8 +6,11 @@
 html, body {font-family: Archivo;}
 
 .uppercase {text-transform: uppercase}
-
 i {vertical-align: middle}
+
+* {outline: 0;}
+
+.btn:focus {outline: none!important; box-shadow: none}
 
 .btn * {vertical-align: middle}
 .btn i {margin-right: 5px;}
