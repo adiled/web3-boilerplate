@@ -4,8 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo:300,400,700');
 
 html, body {font-family: Archivo;}
+*:not(i) {font-family: Archivo!important;}
 
 .uppercase {text-transform: uppercase}
+.bold {font-weight: 700}
+
 i {vertical-align: middle}
 
 * {outline: 0;}
@@ -21,3 +24,9 @@ i {vertical-align: middle}
 //////////////////
 
 .btn-account {color: $dark!important;}
+
+.card {max-width: 720px; margin-left: auto; margin-right: auto}
+
+
+//// Form Generic
+.col-form-label {font-size: 0.92rem}

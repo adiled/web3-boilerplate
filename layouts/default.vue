@@ -12,7 +12,9 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <nuxt/>
+    <section class="container">
+      <nuxt/>  
+    </section>
   </div>
 </template>
 
@@ -65,5 +67,7 @@ html {
     &:after {content: ''; position: absolute; left: 50%; bottom: -10px; transform: translateX(-50%); height: 4px; width: 12px; border-radius: 5px; background-color: $primary}
   }
 }
+
+section.container {padding: 50px 0;}
 
 </style>

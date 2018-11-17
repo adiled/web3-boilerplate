@@ -11,7 +11,7 @@
         <i class="material-icons">credit_card</i> <span>XMND 20000</span>
       </div>
 
-      <b-button class="rounded uppercase" variant="primary" size="sm" to="/pledge">
+      <b-button class="rounded uppercase" variant="primary" size="sm" to="/pledge/new">
         <i class="material-icons">add</i><span>Pledge</span>
       </b-button>
 
@@ -70,7 +70,7 @@
     }
 
     .dropdown-header {
-      p {margin: 0;}
+      p {margin: 0  ;}
     }
   }
 

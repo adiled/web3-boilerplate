@@ -18,8 +18,7 @@ export default {
 </script>
 
 <style>
-  .icon-text {
-    p {display: flex; align-items: center; margin: 0;}
+  .icon-text { display: flex; align-items: center; margin: 0;
     * {vertical-align: middle}
     i.material-icons {padding-right: 4px; font-size: 20px;}  
   }
