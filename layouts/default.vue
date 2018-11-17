@@ -6,7 +6,7 @@
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav tag="div">
-          <b-nav-item v-for="item in menuItems" :key="item.label" :to="item.to">
+          <b-nav-item v-for="item in menuItems" :key="item.label" :to="item.to" exact>
             <icon-text :text="item.label" :icon="item.icon"></icon-text>
           </b-nav-item>
         </b-navbar-nav>
@@ -33,7 +33,6 @@ export default {
         {label: 'Wallet', to: '/wallet', icon: 'account_balance_wallet'},
         {label: 'Transactions', to: '/transactions', icon: 'view_list'},
         {label: 'Pledges', to: '/pledge', icon: 'assignment'},
-
       ]
     }
   }

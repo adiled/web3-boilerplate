@@ -19,6 +19,10 @@
         <template slot="button-content">
           <i class="material-icons">account_circle</i>
         </template>
+        <b-dropdown-header class="text-center">
+          <p>{{$store.state.user.first_name + ' ' + $store.state.user.last_name}}</p>
+          <p class="uppercase text-center">{{$store.state.user.accountType}}</p>
+        </b-dropdown-header>
         <b-dropdown-item>Settings</b-dropdown-item>
         <b-dropdown-item>Logout</b-dropdown-item>
       </b-dropdown>
@@ -42,7 +46,7 @@
 
 .topbar { width: 100%; padding: 0 20px; height: 50px; position: relative; z-index: 2;
   background: #fff; box-shadow: 0 1px 0 0 darken($body-bg, 2); 
-    
+
   > * {height: 100%; display: flex; align-items: center;}
 
   * {vertical-align: middle}
@@ -63,6 +67,10 @@
     .rate {}
     .btn-account {
       i {font-size: 32px}
+    }
+
+    .dropdown-header {
+      p {margin: 0;}
     }
   }
 

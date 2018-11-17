@@ -6,8 +6,9 @@ const createStore = () => {
     state: () => ({
       user: {
         id: 1,
-        first_name: '',
-        last_name: '',
+        first_name: 'Muhammad Adil',
+        last_name: 'Shaikh',
+        accountType: 'banking',
         email: '',
         xmnr_balance: 1102
       },
