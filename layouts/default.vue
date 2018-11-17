@@ -19,35 +19,35 @@
 </template>
 
 <script>
-import TopBar from '@/components/TopBar'
-import IconText from '@/components/IconText'
+  import TopBar from '@/components/TopBar'
+  import IconText from '@/components/IconText'
 
-export default {
-  components: {
-    topbar: TopBar,
-    'icon-text': IconText
-  },
+  export default {
+    components: {
+      topbar: TopBar,
+      'icon-text': IconText
+    },
 
-  data() {
-    return {
-      menuItems: [
+    data() {
+      return {
+        menuItems: [
         {label: 'Dashboard', to: '/', icon: 'home'},
         {label: 'Wallet', to: '/wallet', icon: 'account_balance_wallet'},
         {label: 'Transactions', to: '/transactions', icon: 'view_list'},
         {label: 'Pledges', to: '/pledge', icon: 'assignment'},
-      ]
+        ]
+      }
     }
   }
-}
 </script>
 
 <style lang="scss">
 
 @import "@/assets/scss/_bootstrap-variable-override.scss";
-  
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -60,11 +60,22 @@ html {
 }
 
 .main-nav { padding: 20px 0; background-color: transparent;
+
   .navbar-collapse {justify-content: center}
-  .navbar-expand-md .navbar-nav .nav-link, .nav-link {padding-left: 40px!important; padding-right: 40px!important}
-  a.nav-link {color: #888; position: relative;}
-  a.nav-link.active {color: $primary;
-    &:after {content: ''; position: absolute; left: 50%; bottom: -10px; transform: translateX(-50%); height: 4px; width: 12px; border-radius: 5px; background-color: $primary}
+  
+  .navbar-expand-md .navbar-nav .nav-link, .nav-link {
+    padding-left: 40px!important; padding-right: 40px!important
+  }
+  
+  a.nav-link { color: #888; position: relative; transition: all 0.3s ease;
+
+    &:after {
+      content: ''; opacity: 0; transition: all 0.3s ease; position: absolute; left: 50%; bottom: -10px; transform: translateX(-50%); height: 4px; width: 12px; border-radius: 5px; background-color: $primary;
+    }
+
+    &.active, &:hover { color: $primary;
+      &:after {opacity: 1}
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 <template>
   <b-card class="pledge-form">
-    <b-form @submit="handleSubmit" @reset="handleReset" v-if="show">
+    <b-form @submit="handleSubmit" @reset="resetForm" v-if="show">
 
       <b-row>
         <b-col>
@@ -74,7 +74,7 @@ export default {
     },
 
     resetForm() {
-      
+
     },
 
     getXmndRate(currency) {

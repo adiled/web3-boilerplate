@@ -17,9 +17,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   .icon-text { display: flex; align-items: center; margin: 0;
-    * {vertical-align: middle}
-    i.material-icons {padding-right: 4px; font-size: 20px;}  
+    i.material-icons {margin-right: 6px; font-size: 20px;}
   }
 </style>
