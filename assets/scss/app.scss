@@ -28,5 +28,26 @@ i {vertical-align: middle}
 .card {max-width: 720px; margin-left: auto; margin-right: auto}
 
 
-//// Form Generic
+//// Form
+
 .col-form-label {font-size: 0.92rem}
+
+
+/// Table
+
+.table { background: #fff; padding: 0 1rem; border-radius: 10px;
+	
+	thead tr {border: 0; box-shadow: 0 2px 2px 0 darken($body-bg,2)}
+	
+	tr {box-shadow: 0 2px 1px 0 $body-bg;
+		&.b-table-has-details {box-shadow: none;
+			td {border-bottom: 4px solid $body-bg;}
+		}
+		&.b-table-details { 
+			td {padding: 2rem 0; font-size: 0.9em;} 
+		}
+	}
+
+	thead th, th, td {border: 0; vertical-align: middle;}
+	th {color: #555; text-transform: uppercase; font-size: 0.85em}
+}

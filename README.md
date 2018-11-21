@@ -1,3 +1,5 @@
+https://pay-gui.now.sh
+
 ## Build Setup
 
 ``` bash

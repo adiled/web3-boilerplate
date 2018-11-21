@@ -1,1 +1,8 @@
-{}
+{
+  "version": 2,
+  "name": "pay-gui",
+  "alias": "pay-gui.now.sh",
+  "builds": [
+    { "src": "./dist/index.html", "use": "@now/static" }
+  ]
+}
