@@ -4,22 +4,10 @@
   </section>
 </template>
 
-<script>
-
-export default {
-  components: {},
-  
-  head() {
-    return {
-      title: 'XMNPay'
-    }
-  },
-
-  data() {
-    return {
-    }
-  }
-}
+<script setup>
+  definePageMeta({
+    title: 'web3-boilerplate'
+  });
 </script>
 
 <style>

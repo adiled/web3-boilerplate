@@ -2,13 +2,13 @@
   <div class="topbar clearfix">
     <div class="logo">
       <nuxt-link to="/">
-        <img src="~/static/img/xmnpay-logo.png">
+        <img src="">
       </nuxt-link>
     </div>
     <div class="quicklook">
 
       <div class="account-balance">
-        <i class="material-icons">credit_card</i> <span>XMND 20000</span>
+        <i class="material-icons">credit_card</i> <span>VEB3 20000</span>
       </div>
 
       <b-button class="rounded uppercase" variant="primary" size="sm" to="/pledge/new">
@@ -20,8 +20,8 @@
           <i class="material-icons">account_circle</i>
         </template>
         <b-dropdown-header class="text-center">
-          <p>{{$store.state.user.first_name + ' ' + $store.state.user.last_name}}</p>
-          <p class="uppercase text-center">{{$store.state.user.accountType}}</p>
+          <p>{{$store.state.user.first_name + ' ' + store.user.last_name}}</p>
+          <p class="uppercase text-center">{{store.user.accountType}}</p>
         </b-dropdown-header>
         <b-dropdown-item>Settings</b-dropdown-item>
         <b-dropdown-item>Logout</b-dropdown-item>
@@ -31,16 +31,11 @@
   </div>
 </template>
 
-<script>
-  export default {
-    data() {
-      return {}
-    }
-  }
+<script setup>
+  import { store } from '../store/index.js';
 </script>
 
 <style lang="scss">
-
 
 @import "@/assets/scss/_bootstrap-variable-override.scss";
 

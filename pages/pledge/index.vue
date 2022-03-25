@@ -3,14 +3,10 @@
   </div>
 </template>
 
-<script>
-export default {
-  head() {
-    return {
-      title: 'Pledge'  
-    }
-  }
-}
+<script setup>
+  definePageMeta({
+    title: 'Pledge'
+  });
 </script>
 
 <style lang="scss">

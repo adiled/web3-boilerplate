@@ -1,5 +1,6 @@
 https://pay-gui.now.sh
 
+
 ## Motive for turning an abandoned interface to boilerplate
 
 This project was created as an interface for a DeFi protocol, albeit met abandonment due to weak motivation of the contracting party. I could very well have started from scratch, however I want to make it a point of turning a dated project into something useful.
@@ -10,23 +11,7 @@ The primary motivation is to build it in top of Vue3 Composition API, and specif
 
 By that motivation, I aim to bring delightful experience to web3 frontends, and invite engineers that favor vue ecosystem.
 
-## Build Setup
 
-``` bash
-# install dependencies
-$ yarn install
+## Planned dependencies
 
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
-
----
+Boilerplate would consume planned implementations of `web3-elements`, `web3-vue` and their sub-packages for vue/nuxt integration. 

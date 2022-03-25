@@ -1,26 +1,17 @@
-import Vuex from 'vuex'
-// import Vue from 'vue'
+// store.js
+import { reactive } from 'vue';
 
-const createStore = () => {
-  return new Vuex.Store({
-    state: () => ({
-      user: {
-        id: 1,
-        first_name: 'Muhammad Adil',
-        last_name: 'Shaikh',
-        accountType: 'banking',
-        email: '',
-        xmnr_balance: 1102
-      },
-
-      transactions: [
-        { date: 'Nov 17, 2018', type: 'Sent', name: 'John Doe', amount: '20 XMND', status: 'Pending', address: '27nc8297134872134h6d82174jasdfuy876', transaction_id: 'SJKHD324876'},
-        { date: 'Nov 17, 2018', type: 'Received', name: 'Jane Doe', amount: '500 XMND', status: 'Complete'},
-      ]
-    }),
-    mutations: {
-    }
-  })
-}
-
-export default createStore
+export const store = reactive({
+    user: {
+      id: 1,
+      first_name: 'Jane',
+      last_name: 'Doe',
+      accountType: 'banking',
+      email: '',
+      veb3_balance: 1102
+    },
+    transactions: [
+      { date: 'Nov 17, 2018', type: 'Sent', name: 'John Doe', amount: '20 VEB3', status: 'Pending', address: '27nc8297134872134h6d82174jasdfuy876', transaction_id: 'SJKHD324876'},
+      { date: 'Nov 17, 2018', type: 'Received', name: 'Jane Doe', amount: '500 VEB3', status: 'Complete'},
+    ]
+});
